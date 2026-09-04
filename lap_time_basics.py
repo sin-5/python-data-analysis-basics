@@ -9,3 +9,11 @@ for i in range(len(lap_times)):
     SUM += lap_times[i]
 AVERAGE = SUM / len(lap_times)
 print('Average:', AVERAGE)
+
+Fastest = lap_times[0]
+Fastest_lap = 0
+for i in range(len(lap_times)):
+    if Fastest >= lap_times[i]:
+        Fastest = lap_times[i]
+        Fastest_lap = i
+print('Fastest', Fastest, 'Lap', Fastest_lap)
