@@ -25,6 +25,9 @@ def find_fastest_lap(lap_times):
 fastest = find_fastest_lap(lap_times)
 print('Fastest:', fastest[0], 'Lap:', fastest[1])
 
-for i in range(len(lap_times)):
-    if lap_times[i] < 92:
-        print('Lap', i + 1, ':', lap_times[i])
+def display_laps_under_92(lap_times):
+    for i in range(len(lap_times)):
+        if lap_times[i] < 92:
+            print('Lap', i + 1, ':', lap_times[i])
+
+display_laps_under_92(lap_times)
