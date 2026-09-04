@@ -4,16 +4,16 @@ for i in range(len(lap_times)):
     print('Lap', i + 1, lap_times[i])
 
 #print('Average:', sum(lap_times) / len(lap_times))
-SUM = 0
+total = 0
 for i in range(len(lap_times)):
-    SUM += lap_times[i]
-AVERAGE = SUM / len(lap_times)
-print('Average:', AVERAGE)
+    total += lap_times[i]
+average = total / len(lap_times)
+print('Average:', average)
 
-Fastest = lap_times[0]
-Fastest_lap = 0
+fastest = lap_times[0]
+fastest_lap = 1
 for i in range(len(lap_times)):
-    if Fastest >= lap_times[i]:
-        Fastest = lap_times[i]
-        Fastest_lap = i
-print('Fastest', Fastest, 'Lap', Fastest_lap)
+    if fastest >= lap_times[i]:
+        fastest = lap_times[i]
+        fastest_lap = i + 1
+print('Fastest:', fastest, 'Lap:', fastest_lap)
