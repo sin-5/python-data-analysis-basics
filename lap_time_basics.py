@@ -4,11 +4,14 @@ for i in range(len(lap_times)):
     print('Lap', i + 1, lap_times[i])
 
 #print('Average:', sum(lap_times) / len(lap_times))
-total = 0
-for i in range(len(lap_times)):
-    total += lap_times[i]
-average = total / len(lap_times)
-print('Average:', average)
+def average_lap_time(lt):
+    total = 0
+    for i in range(len(lt)):
+        total += lt[i]
+    average = total / len(lt)
+    return average
+
+print('Average:', average_lap_time(lap_times))
 
 fastest = lap_times[0]
 fastest_lap = 1
