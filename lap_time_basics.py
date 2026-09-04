@@ -17,3 +17,7 @@ for i in range(len(lap_times)):
         fastest = lap_times[i]
         fastest_lap = i + 1
 print('Fastest:', fastest, 'Lap:', fastest_lap)
+
+for i in range(len(lap_times)):
+    if lap_times[i] < 92:
+        print('Lap', i + 1, ':', lap_times[i])
