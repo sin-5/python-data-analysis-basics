@@ -6,7 +6,9 @@ lap_times = {
     5: 92.0 
 }
 
-with open('test.txt', 'w') as f:
+with open('lap_times.txt', 'w') as f:
     for lap_num, lap_time in lap_times.items():
-        f.write(f'{lap_num}: {lap_time}\n')
-        
+        f.write(f'Lap {lap_num}: {lap_time}\n')
+
+with open('lap_times.txt', 'r') as f:
+    print(f.read())
