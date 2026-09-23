@@ -14,4 +14,8 @@ with open('lap_times.csv', 'w', newline='') as f:
     writer.writeheader()
     for lap_num, lap_time in lap_times.items():
         writer.writerow({'lap':lap_num, 'lap_time':lap_time})
-    
+
+with open('lap_times.csv', 'r', newline='') as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        print(row['lap'], row['lap_time'])
