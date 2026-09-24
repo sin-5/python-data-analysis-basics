@@ -10,7 +10,8 @@ def average(df):
     return average
 
 def fastest(df):
-    fastest_lap = df['lap_time'].idxmin() + 1
+    fastest_index = df['lap_time'].idxmin()
+    fastest_lap = df.loc[fastest_index, 'lap']
     fastest_lap_time = df['lap_time'].min()
     return fastest_lap, fastest_lap_time
 
