@@ -4,7 +4,7 @@
 I'm learning the basics of python, CSV file, numpy, pandas and matplotlib.
 
 ## Lap Time CSV Analyzer
-This program reads data from CSV file, and show the data as text or graph.
+This program reads data from CSV file, and shows the data as text or graph.
 
 ## Features
 - Reading some data from CSV file
@@ -14,7 +14,7 @@ This program reads data from CSV file, and show the data as text or graph.
 - Show the graph of Lap Time
 
 ## Data
-There are some lap numbers on first column of lap_times.csv, and some lap times on second column.
+The CSV file has two columns: lap and lap_time.
 
 ## How It Works
 CSV
@@ -29,8 +29,8 @@ Be visible using matplotlib
 
 ## What I Learned
 I learned how to read CSV file's data and how to use some module such as numpy, pandas, and matplotlib.
-And I learned the way to search the index of minimum data with idxmin().
-I also learned how to display some complex data as graph that easy to understand the difference of the data and next data.
+And I learned how to find the index of minimum value with idxmin().
+I also learned how to display some complex data on graph that easy to understand the difference between the data and next data.
 
 ## Files
 lap_time_basics.py
