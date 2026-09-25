@@ -30,7 +30,7 @@ Be visible using matplotlib
 ## What I Learned
 I learned how to read CSV file's data and how to use some module such as numpy, pandas, and matplotlib.
 And I learned how to find the index of minimum value with idxmin().
-I also learned how to display some complex data on graph that easy to understand the difference between the data and next data.
+I also learned how to visualize data with a graph so that the differences between laps are easier to understand.
 
 ## Files
 lap_time_basics.py
@@ -38,7 +38,7 @@ file_io_basics.py
 csv_basics.py
 numpy_basics.py
 pandas_basics.py
-matplotlib_basics.py
+matplotlib_basics.py: basic practice for plotting lap time data.
 lap_time_analyzer.py: this program reads the data from csv file and display those average, fastest, the lap under 92 sec and graph.
 lap_times.txt
 lap_times.csv: lap number and lap times saved as csv
